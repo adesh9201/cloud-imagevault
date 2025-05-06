@@ -1,0 +1,22 @@
+# .env file (Sensitive environment variables)
+.env
+
+# Node modules (do not commit node_modules)
+node_modules/
+
+# Logs
+*.log
+
+# npm package lock files (optional)
+package-lock.json
+yarn.lock
+
+# Build output folder (do not commit build artifacts)
+dist/
+
+# Coverage directory used by testing tools
+coverage/
+
+# Temporary files created by IDEs/editors
+.vscode/
+.idea/
