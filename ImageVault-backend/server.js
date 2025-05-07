@@ -9,7 +9,9 @@ const app = express();
 connectDB();
 
 app.use(cors({
-    origin: 'https://adeshmishra-imagevault.vercel.app'
+    origin: "https://adeshmishra-imagevault.vercel.app",
+    methods: ["GET", "POST", "DELETE"],
+    credentials: true
 }));
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
