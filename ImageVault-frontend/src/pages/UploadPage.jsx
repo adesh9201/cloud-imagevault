@@ -70,7 +70,7 @@ const UploadPage = () => {
                 <div className="w-full flex justify-between mb-8 z-10">
                     <button
                         onClick={() => navigate("/")}
-                        className="bg-white/20 hover:bg-white/30 text-white px-5 py-3 rounded-lg shadow-lg flex items-center gap-2 transition-all"
+                        className="bg-gray-800 hover:bg-white/30 text-white px-5 py-3 rounded-lg shadow-lg flex items-center gap-2 transition-all"
                     >
                         {/* <Home className="w-5 h-5" /> */}
                         🏠 Home
