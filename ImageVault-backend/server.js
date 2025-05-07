@@ -9,8 +9,7 @@ const app = express();
 connectDB();
 
 const corsOptions = {
-    origin: process.env.CLIENT_URL,
-    credentials: true, // agar cookies ya token bhejna hai
+    origin: process.env.CLIENT_URL
 };
 // CORS middleware
 app.use(cors(corsOptions));
