@@ -8,11 +8,13 @@ const path = require("path");
 const app = express();
 connectDB();
 
-app.use(cors({
-    origin: "https://adeshmishra-imagevault.vercel.app",
-    methods: ["GET", "POST", "DELETE"],
-    credentials: true
-}));
+const corsOptions = {
+    origin: process.env.CLIENT_URL,
+    credentials: true, // agar cookies ya token bhejna hai
+};
+// CORS middleware
+app.use(cors(corsOptions));
+
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 app.use("/api/images", imageRoutes);
