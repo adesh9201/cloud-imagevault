@@ -63,7 +63,7 @@ const UploadPage = () => {
 
                 {/* Heading */}
                 <h1 className="text-5xl font-extrabold text-white text-center mb-10 drop-shadow-xl transform scale-110 animate__animated animate__fadeIn">
-                    <span className="inline-flex items-center gap-3">📸 ImageVault</span>
+                    <span className="inline-flex items-center gap-3">📸 Upload Images</span>
                 </h1>
 
                 {/* Nav Buttons - Positioned Above the Upload Card */}
@@ -72,15 +72,15 @@ const UploadPage = () => {
                         onClick={() => navigate("/")}
                         className="bg-white/20 hover:bg-white/30 text-white px-5 py-3 rounded-lg shadow-lg flex items-center gap-2 transition-all"
                     >
-                        <Home className="w-5 h-5" />
-                        Home
+                        {/* <Home className="w-5 h-5" /> */}
+                        🏠 Home
                     </button>
                     <button
                         onClick={() => navigate("/gallery")}
                         className="bg-[#3b82f6] hover:bg-[#2563eb] text-white px-5 py-3 rounded-lg shadow-lg flex items-center gap-2 transition-all"
                     >
-                        <ArrowRight className="w-5 h-5" />
-                        Gallery
+                        {/* <ArrowRight className="w-5 h-5" /> */}
+                        🖼️ Gallery
                     </button>
                 </div>
 
