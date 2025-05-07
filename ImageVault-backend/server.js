@@ -9,7 +9,7 @@ const app = express();
 connectDB();
 
 app.use(cors({
-    origin: 'https://atadeshmishra-imagevault.onrender.com'
+    origin: 'https://adeshmishra-imagevault.vercel.app'
 }));
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
